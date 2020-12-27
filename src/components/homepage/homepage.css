@@ -1,0 +1,17 @@
+.array-container {
+    position: absolute;
+    left: 100px;
+    /* top: 100px; */
+  }
+  
+  .array-bar {
+    display: inline-block;
+    margin: 0 1px;
+  }
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
