@@ -4,7 +4,7 @@ import { Button, ButtonGroup } from "@chakra-ui/react"
 
 import BubbleSort from '../sortingAlgos/bubbleSort';
 import GenerateRandoms from './generateRandoms';
-import MergeSort from '../sortingAlgos/mergeSort';
+import containMergeSort from '../sortingAlgos/mergeSort';
 import React from 'react'
 import selectionSort from '../sortingAlgos/selectAndSort';
 
@@ -51,8 +51,8 @@ class Homepage extends React.Component{
         await this.setState({disabled:false})
     }
    mergeSort=async()=>{
-        await this.setState({disabled:true})
-        await MergeSort(this.state,this.handleChange,this.timeout)
+        await this.setSta                                  te({disabled:true})
+        await containMergeSort(this.state,this.handleChange,this.timeout)
         await this.setState({color:this.state.color.map(e=>'purple')})
         await this.setState({disabled:false})
     }
